@@ -35,6 +35,9 @@ class Wizard(Creature):
             print("The wizard has lost the battle.")
             return False
 
+    def new_feature(self):
+        pass
+
 
 class SmallAnimal(Creature):
     def get_defensive_roll(self):
@@ -60,3 +63,21 @@ class Dragon(Creature):
         scale_modifier = self.scaliness / 10
 
         return base_roll * fire_modifier * scale_modifier
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
