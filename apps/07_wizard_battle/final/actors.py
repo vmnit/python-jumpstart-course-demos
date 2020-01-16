@@ -32,7 +32,7 @@ class Wizard(Creature):
             print("The wizard has handily triumphed over {}".format(creature.name))
             return True
         else:
-            print("The wizard has been DEFEATED!!!")
+            print("The wizard has lost the battle.")
             return False
 
 
