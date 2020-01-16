@@ -83,4 +83,4 @@ def game_loop():
 if __name__ == '__main__':
     main()
 
-print("Goodbye")
+print("Goodbye!")
