@@ -1,7 +1,10 @@
 import time
 import random
 
-from actors import Wizard, Creature, SmallAnimal, Dragon
+from creatures import Creature
+from dragons import Dragon
+from small_animal import SmallAnimal
+from wizard import Wizard
 
 
 def main():
@@ -56,7 +59,7 @@ def game_loop():
 
         cmd = input('Do you [a]ttack, [r]unaway, or [l]ook around? ')
         if cmd == 'a':
-            if hero.attack(active_creature):
+            if hero.fight(active_creature):
                 creatures.remove(active_creature)
             else:
                 print("The wizard runs and hides taking time to recover...")
