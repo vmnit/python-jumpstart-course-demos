@@ -19,7 +19,7 @@ def load_data(fname):
 
 def print_data(data):
     for i in range(len(data)):
-        print ("{}. {}".format(i, data[i]))
+        print ("{}. {}".format(i, data[i]), end="")
 
 def do_operation(data):
     while(True):
@@ -29,7 +29,7 @@ def do_operation(data):
             print_data(data)
         elif (choice == 'a'):
             new_data = input("Enter your journal entry:\n")
-            data.append(new_data)
+            data.append(new_data+"\n")
         elif (choice == 'x'):
             return data
         else:
